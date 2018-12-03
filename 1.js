@@ -1,5 +1,4 @@
 const binaryToAscii = (str)=>{
-	let asciiCode = 0;
 	let binaryArr = str.split("");
 	let conversionArr = [128, 64, 32, 16, 8, 4, 2, 1];
 	return binaryArr.map((val, index)=> val * conversionArr[index]).reduce((acc, val)=> acc + val);
